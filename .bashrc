@@ -1,1 +1,0 @@
-/Users/timakaaliebe/tima-dotfiles/.bashrc

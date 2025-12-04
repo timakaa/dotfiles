@@ -2,7 +2,9 @@
 set -e  # Exit on any error
 
 DOTFILES="$HOME/tima-dotfiles"
-CONFIGS=(nvim tmux ghostty)  # Add more: fish, alacritty, etc.
+CONFIGS=(nvim tmux ghostty yabai)  # Add more: fish, alacritty, etc.
+# Home dotfiles (e.g., .bashrc, .zshrc)
+HOMEFILES=(".zshrc")  # Customize
 
 echo "🔄 Migrating dotfiles to $DOTFILES..."
 
@@ -12,8 +14,6 @@ for config in "${CONFIGS[@]}"; do
   rsync -av --exclude='.git' --exclude='.git*' ~/.config/"$config"/ "$DOTFILES/$config/"
 done
 
-# Home dotfiles (e.g., .bashrc, .zshrc)
-HOMEFILES=(".bashrc" ".zshrc" ".tmux.conf")  # Customize
 for file in "${HOMEFILES[@]}"; do
   if [[ -f "$HOME/$file" ]]; then
     echo "📄 Copying $file..."
