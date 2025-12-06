@@ -1,7 +1,7 @@
 # timakaa's version of .dotfiles. Mostly oriented for MacOs
 
 >
-> All the setups for MacOs will require hobrew to be installed
+> All the setups for MacOs will require homebrew to be installed
 >
 
 #### How to install homebrew
