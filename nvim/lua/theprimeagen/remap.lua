@@ -93,4 +93,6 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
-vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
+vim.keymap.set("n", "<leader>i", vim.diagnostic.open_float)
+
+vim.keymap.set("n", "<leader>e", "<cmd>Ex<cr>")
