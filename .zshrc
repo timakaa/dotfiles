@@ -1,9 +1,9 @@
-echo ' _   _                 _               '
-echo '| |_(_)_ __ ___   __ _| | ____ _  __ _ '
-echo '| __| |  _ ` _ \ / _` | |/ / _` |/ _` |'
-echo '| |_| | | | | | | (_| |   < (_| | (_| |'
-echo ' \__|_|_| |_| |_|\__,_|_|\_\__,_|\__,_|'
-echo '                                       '
+echo -e "\e[35m _   _                 _               \e[0m"
+echo -e "\e[35m| |_(_)_ __ ___   __ _| | ____ _  __ _ \e[0m"
+echo -e "\e[35m| __| |  _ \` _ \ / _\` | |/ / _\` |/ _\` |\e[0m"
+echo -e "\e[35m| |_| | | | | | | (_| |   < (_| | (_| |\e[0m"
+echo -e "\e[35m \__|_|_| |_| |_|\__,_|_|\_\__,_|\__,_|\e[0m"
+echo -e "\e[35m                                       \e[0m"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -127,3 +127,4 @@ export EDITOR=vim
 bindkey '^E' autosuggest-accept
 bindkey -s '^f' "tmux-sessionizer\n"
 export PATH="$HOME/.local/bin:$PATH"
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
